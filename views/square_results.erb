@@ -3,9 +3,9 @@
 <% input = params.fetch(:number) %>
 
 <% if input == "" %>
-  <% input= 0 %>
+  <% input= 0.0 %>
 <% else %>
-  <% input = input.to_i %>
+  <% input = input.to_f %>
 <% end %>
 
 <% results = input * input %>
@@ -13,7 +13,7 @@
 
 <dl>
   <dt>Number</dt>
-  <dd><%= input %></dd>
+  <dd><%= input.to_i %></dd>
   <dt>Square</dt>
   <dd><%= results %></dd>
 </dl>

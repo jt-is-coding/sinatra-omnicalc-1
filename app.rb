@@ -37,6 +37,12 @@ get("/payment/new") do
 
 end
 
+get("/payment/results") do
+
+  erb(:payment_results)
+
+end
+
 get("/random/new") do
 
   erb(:random)

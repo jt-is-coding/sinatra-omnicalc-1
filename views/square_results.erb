@@ -1,0 +1,17 @@
+<h1>Square Results</h1>
+
+<% input = params.fetch(:number) %>
+
+<% if input == "" %>
+  <% input= 0 %>
+<% else %>
+  <% input = input.to_i %>
+<% end %>
+
+<% results = input * input %>
+<% results = results.to_f %>
+
+<dt>Number</dt>
+<dd><%= input %></dd>
+<dt>Results</dt>
+<dd><%= results %></dd>

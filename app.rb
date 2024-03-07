@@ -25,6 +25,12 @@ get("/square_root/new") do
 
 end
 
+get("/square_root/results") do
+
+  erb(:square_root_results)
+
+end
+
 get("/payment/new") do
 
   erb(:payment)
